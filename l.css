@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Container */
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/*  NAVIGATION  */
+
+.navlist {
+    list-style: none;
+    /*bullutes will remove*/
+    display: flex;
+    /*list will be vertically*/
+    gap: 50px;
+    /*navigation items k beach gap*/
+
+    height: 15vh;
+/*screnn k 100 me se 15% height:  hay;*/
+    width: 100%;
+
+    justify-content: center;
+    /*abb ya saray items list k van k center me honagy*/
+    align-items: center;
+
+    background-color: #0f172a;
+    
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: white;
+    font-weight: bold;
+
+    padding: 10px 15px;
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+/* Navigation Hover */
+
+.navlist li a:hover {
+    color: #00b4d8;
+
+    background-color: #1e293b;
+
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.5);
+
+    transform: translateY(-3px);
+    /*Link ko Y-axis par 3px upar move karo.*/
+}
+
+
+/*  MAIN CONTENT  */
+
+.content {
+    display: flex;
+    height: 85vh;
+}
+
+
+/*  LEFT SECTION  */
+
+.left-container {
+    width: 70%;
+
+    background-color: #f8fafc;
+    /*Pure white*/
+
+    padding: 100px 80px;
+
+    display: flex;
+    flex-direction: column;
+    /*vertical direction mein rehte hain.*/
+    justify-content: center;
+}
+
+
+/* Introduction */
+
+.intro {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+    color: #00b4d8;
+}
+
+
+/* Main Heading */
+
+.left-container h1 {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+    color: #0f172a;
+   /* bright blue color hai
+*/
+}
+
+/* Description */
+
+.description {
+    font-size: 18px;
+
+    width: 80%;
+
+    line-height: 1.6;
+
+    color: #475569;
+}
+
+
+/*  BUTTONS  */
+
+.buttons {
+    margin-top: 30px;
+    /*Buttons ke upar 30px ka space create karta hai.
+    Yani paragraph aur buttons chipke hue nahi hain.*/
+}
+
+.buttons button {
+    padding: 12px 25px;
+    margin-right: 15px;
+    /*12px → top + bottom
+25px → left + right
+Har button ke right side 15px space.*/
+
+    border: 2px solid #00b4d8;
+    /*#00b4d8 is a hexadecimal code for a bright cyan-blue color.*/
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    background-color: #00b4d8;
+    color: white;
+    transition: all 0.3s ease;
+    /*Button ka background color cyan-blue kar raha hai.
+    text color white 
+    It makes the changes in the button smooth when the user hovers over it.*/
+}
+
+
+/* Button Hover */
+
+.buttons button:hover {
+    background-color: transparent;
+    color: #00b4d8;
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.5);
+    transform: translateY(-3px);
+}
+
+
+/*  RIGHT SECTION  */
+
+.right-container {
+    width: 30%;
+    background-color: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*  PROFILE IMAGE  */
+
+.right-container img {
+    width: 330px;
+
+    height: 330px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow: 0 0 30px rgba(0, 180, 216, 0.7);
+
+    transition: all 0.4s ease;
+}
+
+
+/* Image Hover */
+
+.right-container img:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 0 45px rgba(0, 180, 216, 0.9);
+}
